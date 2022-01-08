@@ -1,0 +1,163 @@
+@charset "UTF-8";
+button,
+button:active,
+button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/*кнопки направления на полосе прокрутки */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #717171;
+  margin: 20px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #181818;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+li[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.video__container {
+  height: 84.5%;
+  color: red;
+  position: inherit;
+  width: 84.5%;
+  padding: 8.5% 0 0 1.5%;
+  margin: 0 0 0 15.5%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 20px 5px;
+  overflow-x: hidden;
+  background-color: #181818;
+}
+
+.video {
+  min-height: 250px;
+  height: 150px;
+  width: 300px;
+  color: red;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  color: #ffffff;
+}
+
+.content {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.channel-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.channel-name {
+  font-size: 14px;
+  margin: 2px 0;
+  color: #979797;
+}
+
+/*# sourceMappingURL=Main_style.css.map */

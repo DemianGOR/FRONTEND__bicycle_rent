@@ -1,0 +1,24 @@
+.bot-header__container {
+  margin-top: 12px;
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(32, 32, 32, 0.97);
+  height: 55px;
+  border-bottom: 1px solid #373737;
+}
+.bot-header__container .bot-header__inner {
+  margin-left: 20px;
+}
+.bot-header__container .bot-header__inner .bot-header__item {
+  padding: 0 13px 0 13px;
+  height: 29px;
+  display: inline-block;
+  justify-content: space-between;
+  margin: 12px 5px 0 5px;
+  border: 1px solid #373737;
+  border-radius: 30px;
+  background-color: #373737;
+  color: #F5F5F5;
+}
+
+/*# sourceMappingURL=BotHeader.css.map */
