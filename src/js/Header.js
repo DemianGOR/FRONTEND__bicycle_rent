@@ -9,11 +9,12 @@ import like from "../img/Like.png";
 import watch from "../img/Whatch_Later.png";
 import compass from "../img/compass.png";
 import library from "../img/Library.png";
-
+import Main from "./Main";
 import "../css/Style.css";
 
 
 function Menu(){
+
 
     return(
     <div className="menu__container">
@@ -25,7 +26,7 @@ function Menu(){
                 </button>
                 <img className="logo__youtube" alt="logo" src={logo}/>
             </div>
-            <div className="menu__section-item">
+            <div className="menu__section-item menu__section-item-focus" onClick={Main}>
                 <img className="menu__img" alt="home" src={home}/>
                 <div className="menu__item-text" >Home</div>
             </div>
@@ -42,7 +43,7 @@ function Menu(){
 
         <div className="other__inner">
             <div className="menu__title"></div>
-            <div className="menu__section-item">
+            <div className="menu__section-item" >
                 <img className="menu__img" alt="home" src={library}/>
                 <div className="menu__item-text" >Library</div>
             </div>
