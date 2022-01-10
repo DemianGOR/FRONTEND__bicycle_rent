@@ -12,7 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.Rent__title{
+  margin: 20px 0 20px 15%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

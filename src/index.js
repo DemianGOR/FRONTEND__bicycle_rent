@@ -2,19 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Header from "./js/Header";
-import Main from "./js/Main";
-import TopHeader from "./js/TopHeader";
-import SearchBar from "./js/SearchBar";
+import NewRent from "./js/NewRent";
+import RentTotal from "./js/RentTotal";
+import AvailableRent from "./js/AvailableRent";
+import App from "./App";
+
 
 
 
 ReactDOM.render(
-  <React.StrictMode>
-      <Header/>
-
-      <TopHeader/>
-      <Main/>
+  <React.StrictMode >
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );

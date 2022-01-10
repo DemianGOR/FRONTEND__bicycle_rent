@@ -1,4 +1,11 @@
 @charset "UTF-8";
+button,
+button:active,
+button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -28,6 +35,24 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+
+/*кнопки направления на полосе прокрутки */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #717171;
+  margin: 20px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #181818;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -62,7 +87,6 @@ article > * + * {
 
 /* Наследуем шрифты для инпутов и кнопок */
 input,
-button,
 textarea,
 select {
   font: inherit;
@@ -78,4 +102,4 @@ select {
   }
 }
 
-/*# sourceMappingURL=CssReset.css.map */
+/*# sourceMappingURL=CssRESET.css.map */

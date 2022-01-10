@@ -4,7 +4,12 @@ button:focus {
   outline: none !important;
   border: none !important;
 }
-
+input,
+input:active,
+input:focus {
+  outline: none !important;
+  border: none !important;
+}
 
 
 
