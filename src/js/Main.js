@@ -5,7 +5,6 @@ import "http://apis.google.com/js/api.js"
 
 
 function Main(){
-
     const videoCardContainer = document.querySelector('.video__container');
 
     let api_key = "AIzaSyDK7rAZZ6a4A1oij2aL1qeAkTbW6gZ0z8I";
