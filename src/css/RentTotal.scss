@@ -1,0 +1,50 @@
+@import "CssRESET";
+
+
+@mixin button__bicycle($color){
+  height: 50px;
+  width: 140px;
+  margin: 20px 20px 20px 20px;
+  background-color: $color;
+  color: #FFFFFF;
+  border-radius: 6px;
+}
+
+
+.rent__container{
+  width: 100%;
+  margin:10px 20px 30px 0;
+  border: 1px #717171;
+  border-radius: 6px;
+  min-width: 900px;
+
+  .title__bicycle{
+    margin: 0 0 10px 16% ;
+    font-size: 30px;
+  }
+  .rent__inner{
+    width: 70%;
+    margin:10px auto 10px auto;
+    border: 1px #717171;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    display: flex;
+
+    .bicycle__item{
+      font-size: 20px;
+      margin: auto auto auto 2%;
+    }
+
+    .button__cancel-rent{
+      @include button__bicycle(#F4313F)
+    }
+    .button__rent{
+      @include button__bicycle(#3450C4)
+
+    }
+    .button__delete{
+      @include button__bicycle(#F4313F)
+
+    }
+  }
+}

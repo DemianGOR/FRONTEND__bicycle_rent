@@ -1,0 +1,178 @@
+@charset "UTF-8";
+button,
+button:active,
+button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+input,
+input:active,
+input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/*кнопки направления на полосе прокрутки */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #717171;
+  margin: 20px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #181818;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+li[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.newRent__container {
+  width: 100%;
+  margin: 10px 20px 30px 0;
+  border: 1px #717171;
+  border-radius: 6px;
+  min-width: 900px;
+}
+.newRent__container .title__bicycle {
+  margin: 60px 0 10px 16%;
+  font-size: 30px;
+}
+.newRent__container .newRent__inner {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  width: 70%;
+  margin: 10px auto 30px auto;
+  border: 1px #717171;
+  border-radius: 6px;
+  background-color: #E9EAEE;
+}
+.newRent__container .newRent__inner .input__section-one {
+  display: block;
+}
+.newRent__container .newRent__inner .input__section-one .input__name {
+  height: 37%;
+  width: 80%;
+  margin: 10px 20px 30px 20px;
+  border: 1px #717171;
+  border-radius: 6px;
+}
+.newRent__container .newRent__inner .input__section-two {
+  grid-column: 0/1;
+  display: block;
+}
+.newRent__container .newRent__inner .input__section-two .input__type {
+  height: 37%;
+  width: 80%;
+  margin: 10px 20px 30px 20px;
+  border: 1px #717171;
+  border-radius: 6px;
+}
+.newRent__container .newRent__inner .input__section-three {
+  display: block;
+  min-width: 107px;
+}
+.newRent__container .newRent__inner .input__section-three .input__price {
+  height: 37%;
+  width: 80%;
+  margin: 10px 20px 30px 20px;
+  border: 1px #717171;
+  border-radius: 6px;
+}
+.newRent__container .newRent__inner .button__rent {
+  height: 50px;
+  width: 140px;
+  margin: 40px 20px 30px 20px;
+  background-color: #23BA99;
+  color: #FFFFFF;
+  border: 0 #23BA99;
+  border-radius: 6px;
+}
+.newRent__container .newRent__inner .title__name {
+  font-size: 90%;
+  height: 15%;
+  margin: 14px 20px 0 20px;
+}
+
+/*# sourceMappingURL=NewRent.css.map */

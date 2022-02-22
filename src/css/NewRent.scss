@@ -1,0 +1,82 @@
+@import "CssRESET";
+
+
+
+@mixin input_field{
+  height: 37%;
+  width: 80%;
+  margin:10px 20px 30px 20px;
+  border: 1px #717171;
+  border-radius: 6px;
+}
+
+.newRent__container{
+  width: 100%;
+  margin:10px 20px 30px 0;
+  border: 1px #717171;
+  border-radius: 6px;
+  min-width: 900px;
+
+  .title__bicycle{
+    margin: 60px 0 10px 16% ;
+    font-size: 30px;
+  }
+
+  .newRent__inner{
+    display: grid;
+    grid-template-columns : 2fr 2fr 1fr 1fr;
+    width: 70%;
+    margin:10px auto 30px auto;
+    border: 1px #717171;
+    border-radius: 6px;
+    background-color: #E9EAEE;
+
+
+    .input__section-one{
+
+      display: block;
+
+      .input__name{
+        @include input_field;
+      }
+    }
+
+
+    .input__section-two{
+      grid-column: 0/1;
+
+      display: block;
+      .input__type{
+        @include input_field;
+
+      }
+
+    }
+    .input__section-three{
+      display: block;
+      min-width: 107px;
+      .input__price{
+        @include input_field;
+
+      }
+    }
+
+    .button__rent{
+      height: 50px;
+      width: 140px;
+       margin: 40px 20px 30px 20px;
+      background-color: #23BA99;
+      color: #FFFFFF;
+      border: 0 #23BA99;
+      border-radius: 6px;
+
+    }
+
+
+    .title__name{
+      font-size: 90%;
+      height: 15%;
+      margin: 14px 20px 0 20px;
+    }
+  }
+}
